@@ -1,10 +1,9 @@
 import express, { Express } from 'express'
 import helmet from 'helmet'
 import morgan from 'morgan'
-import routes from '~/routes'
 import keys from '~/utils/keys'
-import database from './configs/database'
 import { responseEnhancer } from './middlewares/express-formatter'
+import routes from './routes'
 import logging from './utils/logging'
 
 const app: Express = express()
@@ -23,9 +22,9 @@ app.use('/api', routes)
 // CREATE SERVER
 try {
   app.listen(keys.port, () => {
-    logging.info(NAMESPACE, `Server is running..`)
+    logging.info(NAMESPACE, `Server is running on port: http://localhost:${keys.port}`)
   })
-  database.createConnection()
+  // database.createConnection()
 } catch (error) {
   logging.error(NAMESPACE, `${error}`)
 }

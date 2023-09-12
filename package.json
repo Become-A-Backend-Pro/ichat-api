@@ -12,7 +12,10 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
-  "repository": "https://github.com/Become-A-Backend-Pro/ichat-api.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Become-A-Backend-Pro/ichat-api.git"
+  },
   "author": "soyongdev",
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +25,7 @@
     "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
+    "date-fns": "^2.30.0",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -40,5 +44,9 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.5.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Become-A-Backend-Pro/ichat-api/issues"
+  },
+  "homepage": "https://github.com/Become-A-Backend-Pro/ichat-api#readme"
 }
