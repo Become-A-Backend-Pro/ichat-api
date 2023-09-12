@@ -1,7 +1,7 @@
 {
-  "name": "ts-node-socialmedia-app",
+  "name": "ichat-api",
   "version": "1.0.0",
-  "description": "Development Social-Media app to learn about become a backend dev.",
+  "description": "iChat api",
   "main": "index.ts",
   "scripts": {
     "dev": "npx nodemon",
@@ -12,11 +12,12 @@
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write ."
   },
-  "repository": "git+https://github.com/Become-A-Backend-Pro/ts-node-socialmedia-app.git",
+  "repository": "https://github.com/Become-A-Backend-Pro/ichat-api.git",
   "author": "soyongdev",
   "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.5",
     "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
@@ -35,6 +36,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2"
   }
 }
