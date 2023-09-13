@@ -18,6 +18,10 @@ export const getByID = async (req: Request, res: Response, next: NextFunction) =
 export const getAll = async (req: Request, res: Response, next: NextFunction) => {
   try {
     logEvent('This is error')
+    logging.info(NAMESPACE, `This is info`)
+    logging.warn(NAMESPACE, `This is warn`)
+    logging.error(NAMESPACE, `This is error`)
+    logging.debug(NAMESPACE, `This is debug`)
     return res.formatter.ok('getAll')
   } catch (error) {
     logging.error(NAMESPACE, `${error}`)
