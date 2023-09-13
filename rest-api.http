@@ -1,0 +1,4 @@
+## User
+
+# Get all users
+GET http://localhost:5001/api/users/find

@@ -1,5 +1,4 @@
 import express, { Express } from 'express'
-import helmet from 'helmet'
 import morgan from 'morgan'
 import keys from '~/utils/keys'
 import { responseEnhancer } from './middlewares/express-formatter'
@@ -11,8 +10,8 @@ const app: Express = express()
 const NAMESPACE = 'index.ts'
 
 // SETTINGS middleware
-app.use(helmet())
-app.use(morgan('common'))
+// app.use(helmet())
+app.use(morgan('dev'))
 // Formatter response express middleware for node.js
 app.use(responseEnhancer())
 
